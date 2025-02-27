@@ -18,23 +18,24 @@ This is a solution to the [ on Frontend Mentor]().
 
 Users should be able to:
 
-- 
+- Read clearly the instructions to cook an omelette, in any device both desktop and mobile.
 
 ### Screenshot
 Desktop Design: 1440 px <br>
-
+![imagen](./recipe-page-main/design/desktop-design.jpg)
 
 
 Mobile design: 375 px
+![imagen](./recipe-page-main/design/mobile-design.jpg)
 
 
 ## Live URL
-- 
+- https://utdevolt.github.io/Recipe-Page/
 
 ## Implementation
 
 ### What I learned
-I learned 
+I have more practice about code for mobile responsive. 
 
 ### Useful resources:
 - https://www.conventionalcommits.org/en/v1.0.0/
