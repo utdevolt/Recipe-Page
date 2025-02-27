@@ -40,5 +40,6 @@ I learned
 - https://www.conventionalcommits.org/en/v1.0.0/
 - https://www.w3schools.com/tags/tag_hr.asp
 - https://www.w3schools.com/howto/howto_css_bullet_color.asp
+- https://www.w3schools.com/html/html_tables.asp
 ## Author
 - Dayvid Ramos

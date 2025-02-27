@@ -14,7 +14,6 @@ body {
 
 }
 
-
 #root {
   background-color: chocolate;
   width: 100%;
@@ -30,7 +29,6 @@ body {
   overflow: auto;
 
 }
-
 
 #page-wrapper {
   background-color: hsl(30, 54%, 90%);
@@ -74,6 +72,8 @@ body {
   height: 1873px;
 
   padding: 20px;
+
+  color: hsl(30, 10%, 34%);
 }
 
 /* main > div > [internal divs] */
@@ -84,8 +84,9 @@ body {
 
 #recipe-description > h1 {
   
-  height: 140px;
+  height: 130px;
 
+  color: hsl(24, 5%, 18%);
   font-size: 38px;
   font-family: 'Young serif', sans-serif;
   
@@ -93,7 +94,8 @@ body {
 
 #recipe-description > p {
   
-  height: 140px;
+  height: 150px;
+  padding-top: 10px;
 
   font-size: 17px;
   color: hsl(30, 10%, 34%);
@@ -160,96 +162,196 @@ body {
 
 
 
-
 #ingredients {
-  background-color: darkred;
   width: 100%;
   height: 290px;
 }
 .div-title {
-  font-size: 24px;
+  width: 95%;
+  height: 60px;
+
+  font-size: 28px;
   font-family: 'young serif';
+  color: hsl(14, 45%, 36%);
+
+  padding-top: 25px;
 }
 
-#ingredients > div {
-  background-color: burlywood;
-  width: 90%;
-  height: 10%;
-}
 
 #ingredients > ul {
-  background-color: red;
-  width: 90%;
-  height: 89%;
+  width: 95%;
+  height: 228px;
 
-  padding-left: 20px;
+  padding: 25px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
-#ingredients > hr {
-  background-color: black;
-  width: 90%;
-  height: 1%;
 
+
+#ingredients > ul > li { 
+  font-size: 18px;
 }
+
+#ingredients > ul > li::marker {
+  color:  hsl(14, 45%, 36%);
+}
+
+.centered-bullet {
+  padding-top: 16px;
+}
+
+.centered-li {
+  position: relative;
+  top: -12px;
+}
+
+.hr-line {
+  border: 1px solid hsl(30, 18%, 87%);
+}
+
 
 #instructions {
-  background-color: orangered;
   width: 100%;
-  height: 720px;
+  height: 780px;
 
 }
 
 #instructions > div {
+  width: 90%;
 }
 
 #instructions > ol {
+  height: 718px;
+
+  padding: 25px 0px 25px 25px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 16px;
+}
+
+#instructions > ol > li::marker {
+  color:  hsl(14, 45%, 36%);
+  font-weight: 600;
+}
+
+#instructions > ol > li {
+  width: 93%;
+
   padding-left: 20px;
+
+  
+  line-height: 24px;
+}
+
+#instructions > ol > li > span {
+  font-weight: 600;
+
 }
 
 
 #nutrition {
-  background-color: hsl(40, 100%, 50%);
   width: 100%;
-  height: 333px;
+  height: 270px;
 }
 
-#nutrition > div {
-  background-color: brown;
-  width: 90%;
-  height: 20%;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-}
 
 #nutrition > p {
-  background-color: red;
   width: 90%;
-  height: 20%;
+  height: 65px;
+
+  padding-top: 16px;
 }
 
-#nutrition > ul {
-  background-color: green;
-  width: 90%;
-  height: 60%;
-
-  padding-left: 25px;
-}
-
-
-@media only screen and (1440px <= width){
-  #page-wrapper {
-    background-color: hsl(30, 54%, 90%);
-    width: 1440px;
-    height: 1955px;
-    /* overflow: auto; */
+#nutrition > table {
+  /* background-color: green; */
+  width: 100%;
+  height: 100px;
   
-    padding: 100px 0px;
+  border-collapse: collapse;
+
+  font-size: 15px;
+}
+
+tr {
+  height: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+td {
+  padding: 7px 32px;
+}
+
+td:nth-child(odd) {
+  width: 40%;
+}
+
+td:nth-child(even) {
+  color:  hsl(14, 45%, 36%);
+  font-weight: 600;
+}
+
+tr:nth-child(4) {
+  border-bottom: none;
+}
+
+
+
+
+@media only screen and (width <= 230px) {
+  #page-wrapper {
+    width: 100%;
+    height: 2043px;
   }
   
   #page-wrapper > main {
+    background-color: cadetblue;
+    width: 90%;
+    height: 100%;
+  
+    border-radius: 20px;
+  
+    font-family: 'Outfit', sans-serif;
+  }
+
+}
+
+@media only screen and (230px < width <= 374px) {
+  #page-wrapper {
+    width: 100%;
+    height: 2043px;
+  }
+  
+  #page-wrapper > main {
+    background-color: rebeccapurple;
+    width: 90%;
+    height: 100%;
+  
+    border-radius: 20px;
+  
+    font-family: 'Outfit', sans-serif;
+  }
+
+}
+
+/* DESKTOP */
+@media only screen and (800px < width) {
+
+  #page-wrapper {
+    background-color: darkcyan;
+    width: 1440px;
+    height: 1955px;
+
+    padding: 120px 0px;
+
+  }
+  
+  #page-wrapper > main {
+    background-color: rebeccapurple;
     width: 720px;
     height: 1760px;
   
