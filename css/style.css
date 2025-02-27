@@ -83,17 +83,14 @@ body {
 }
 
 #recipe-description > h1 {
-  
   height: 130px;
 
   color: hsl(24, 5%, 18%);
   font-size: 38px;
   font-family: 'Young serif', sans-serif;
-  
 }
 
 #recipe-description > p {
-  
   height: 150px;
   padding-top: 10px;
 
@@ -124,7 +121,6 @@ body {
 #preparation-time > ul {
   height: 128px;
   padding-left: 25px;
-
 }
 
 .prep-time-li {
@@ -179,7 +175,6 @@ body {
 
 
 #ingredients > ul {
-  width: 95%;
   height: 228px;
 
   padding: 25px;
@@ -188,7 +183,6 @@ body {
   flex-direction: column;
   gap: 8px;
 }
-
 
 
 #ingredients > ul > li { 
@@ -279,7 +273,7 @@ body {
 
 tr {
   height: 10px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
 }
 
 td {
@@ -302,38 +296,155 @@ tr:nth-child(4) {
 
 
 
-@media only screen and (width <= 230px) {
+@media only screen and (width <= 280px) {
+
+  #root {
+    background-color: chocolate;
+    width: 100%;
+    height: 100%;
+  
+    /* width: 1440px;
+    height: 1955px; */
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+
   #page-wrapper {
     width: 100%;
-    height: 2043px;
+
   }
-  
+
   #page-wrapper > main {
-    background-color: cadetblue;
-    width: 90%;
+    width: 100%;
     height: 100%;
   
     border-radius: 20px;
   
-    font-family: 'Outfit', sans-serif;
+    overflow: auto;
+  }
+
+  #omelette-img {
+    width: 280px;
+    height: 170px;
+  }
+
+  #main-content {
+  
+    width: 100%;
+    height: 1873px;
+  
+    padding: 20px;
+  
+    color: hsl(30, 10%, 34%);
+  }
+  
+  #recipe-description {
+    width: 241px; 
+  }
+
+  #recipe-description > h1 {
+    font-size: 34px;
+    width: 241px;
+  }
+
+  #recipe-description > p {
+    padding-top: 15px;
+    width: 241px;
+    font-size: 15px;
+  }
+
+  #preparation-time {  
+    padding: 20px;
+    border-radius: 5px;
+  }
+
+  .prep-time-li {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  #ingredients {
+    width: 241px; 
+  }
+
+  #ingredients > ul {
+    padding: 25px 0px 25px 25px;
+  }
+
+  #ingredients > ul > li {
+    width: 100%;
+    font-size: 16px;
+  }
+  
+  #instructions {
+    width: 241px; 
+  }
+
+  #instructions > ol {
+    font-size: 14px;
+    width: 241px;
+  }
+  
+  #instructions > ol > li {
+    line-height: 21px;
+    width: 100%;
+  }
+
+  #nutrition {
+    width: 241px; 
+  }
+
+  #nutrition > p {
+    width: 241px;
+    font-size: 13px;
   }
 
 }
 
-@media only screen and (230px < width <= 374px) {
+@media only screen and (280px < width <= 374px) {
   #page-wrapper {
     width: 100%;
     height: 2043px;
   }
   
-  #page-wrapper > main {
-    background-color: rebeccapurple;
+  #recipe-description > h1 {  
+    font-size: 34px;
+  }
+
+  #recipe-description > p {
+    padding-top: 15px;
+
+    font-size: 15px;
+  }
+
+  #preparation-time {  
+    padding: 20px;
+    border-radius: 5px;
+  }
+
+  .prep-time-li {
     width: 90%;
-    height: 100%;
+    font-size: 14px;
+  }
+
+  #ingredients > ul > li { 
+    font-size: 16px;
+  }
   
-    border-radius: 20px;
+  #instructions > ol {
+    font-size: 14px;
+  }
   
-    font-family: 'Outfit', sans-serif;
+  #instructions > ol > li {
+    line-height: 21px;
+  }
+
+  #nutrition > p {
+    width: 100%;
+    font-size: 13px;
   }
 
 }
@@ -357,7 +468,8 @@ tr:nth-child(4) {
   
     padding: 40px;
     border-radius: 20px;
-  
+    
+    overflow: auto;
   }
   
   /*  main > header*/
@@ -371,28 +483,46 @@ tr:nth-child(4) {
   }
 
   /* main > div */
-  #main-content {
-
+  #page-wrapper {
+    width: 100%;
+    height: 2043px;
+  }
+  
+  #recipe-description > h1 {  
+    font-size: 34px;
   }
 
-  /* main > div > [internal divs] */
-  #recipe-description {
+  #recipe-description > p {
+    padding-top: 15px;
 
+    font-size: 15px;
   }
 
-
-  #ingredients {
-
+  #preparation-time {  
+    padding: 20px;
+    border-radius: 5px;
   }
 
-
-  #instructions {
-
+  .prep-time-li {
+    width: 90%;
+    font-size: 14px;
   }
 
+  #ingredients > ul > li { 
+    font-size: 16px;
+  }
+  
+  #instructions > ol {
+    font-size: 14px;
+  }
+  
+  #instructions > ol > li {
+    line-height: 21px;
+  }
 
-  #nutrition {
-
+  #nutrition > p {
+    width: 100%;
+    font-size: 13px;
   }
 
 
